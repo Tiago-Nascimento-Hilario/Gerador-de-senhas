@@ -35,3 +35,17 @@ body{
 .input::placeholder{
     letter-spacing: 0px;
 }
+.fa-copy {
+    cursor: pointer;
+    opacity: .3;
+}
+
+.fa-copy:hover{
+    opacity: 0.7;
+}
+
+.btn{
+    background-color: black;
+    color: white;
+    border: none;
+}
