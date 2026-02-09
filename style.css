@@ -1,0 +1,37 @@
+body{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+    margin: 0;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.password-container{
+    background-color: pink;
+    width: 500px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0,.3);
+}
+
+.input-container{
+    border: solid 2px black;
+    padding: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input{
+    border: none;
+    background-color: transparent;
+    outline: none;
+    font-size: 24px;
+    letter-spacing: 4px;  
+}
+
+.input::placeholder{
+    letter-spacing: 0px;
+}
