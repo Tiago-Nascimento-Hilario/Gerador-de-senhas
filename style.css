@@ -1,22 +1,26 @@
 body{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     height: 100vh;
     align-items: center;
     margin: 0;
     font-family: 'Courier New', Courier, monospace;
+    background-color: #0B1C2D;
+    color: #E6ECF2;
 }
 
 .password-container{
-    background-color: pink;
+    background-color: #1F3A5F;
     width: 500px;
     padding: 20px;
     border-radius: 10px;
+    border: solid 1px 2E2E2E;
     box-shadow: 0 4px 8px rgba(0, 0, 0,.3);
 }
 
 .input-container{
-    border: solid 2px black;
+    border: solid 1px ;
     padding: 10px;
     border-radius: 10px;
     display: flex;
@@ -25,6 +29,8 @@ body{
 }
 
 .input{
+    background: #102A43;
+    color: #E6ECF2;
     border: none;
     background-color: transparent;
     outline: none;
@@ -45,7 +51,38 @@ body{
 }
 
 .btn{
-    background-color: black;
+    background-color:#1F3A5F;
     color: white;
     border: none;
+    margin-top: 10px;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.btn:hover{
+    background-color: #274B75;
+}
+
+.alert-container{
+    
+    background-color: green;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    font-size: 14px;
+    
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    
+    transform: translateX(150%);
+    visibility: hidden;
+    transition: 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+    opacity: 0.4s ease;
+}
+.alert-container.show{
+    transform: translateX(0);
+    opacity: 1;
+    visibility: visible;
 }
